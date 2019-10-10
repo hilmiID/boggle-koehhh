@@ -70,10 +70,12 @@ body{
     padding-top: 10px;
     box-shadow: 3px 3px 5px rgb(57, 99, 71);
     border-radius: 8px;
+    cursor: pointer;
 }
 
-.word-baris>.word:hover, .word-baris>.word:active{
+.word-baris>.word:hover, .word-baris>.word:active, .word-baris>.word:focus{
     background-color: rgb(77, 134, 96);
+    cursor: pointer;
 }
 
 .container>.panel-command{
@@ -93,8 +95,10 @@ body{
     display: inline-block;
     font-size: 16px;
     font-weight: 900;
+    cursor: pointer;
 }
 
 .panel-command>button:hover{
     background-color: rgb(77, 134, 96);
+    cursor: pointer;
 }
