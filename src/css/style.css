@@ -53,6 +53,7 @@ body{
     margin-left: auto;
     box-shadow: 3px 3px 5px rgb(57, 99, 71);
     border-radius: 8px;
+    height:20px;
 }
 
 .word-baris{
@@ -71,6 +72,11 @@ body{
     box-shadow: 3px 3px 5px rgb(57, 99, 71);
     border-radius: 8px;
     cursor: pointer;
+}
+
+.word-baris>.word.active{
+    background-color: rgb(77, 134, 96);
+    transform: translateY(3px);
 }
 
 .word-baris>.word:hover, .word-baris>.word:active, .word-baris>.word:focus{
@@ -101,4 +107,27 @@ body{
 .panel-command>button:hover{
     background-color: rgb(77, 134, 96);
     cursor: pointer;
+}
+
+  
+.panel-command>button:active {
+    transform: translateY(4px);
+}
+
+.container>.panel-list{
+    background-color: whitesmoke;
+    padding: 2px 0;
+    width: 50%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 20px;
+    margin-top: 10px;
+    box-shadow: 3px 3px 5px rgb(57, 99, 71);
+    border-radius: 8px;
+    border: 1px solid rgb(77, 134, 96);
+}
+
+.panel-list>ul{
+    padding: 0;
 }
