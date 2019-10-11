@@ -129,10 +129,7 @@ function initialize() {
     function clean() {
         input = "";
         lastPos = null;
-        listValidResult = [];
-        // score = 0;
         screen.textContent = "";
-        listResultPanel.textContent = "";
         words.forEach((val, idx) => {
             words[idx].classList.remove("active");
         });
