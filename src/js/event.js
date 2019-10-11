@@ -231,9 +231,9 @@ function initialize() {
 
 
 
-    const check$ = fromEvent(actions[0], 'click').pipe(map(v => 'check'));
-    const clean$ = fromEvent(actions[1], 'click').pipe(map(v => 'clean'));
-    const next$ = fromEvent(actions[2], 'click').pipe(map(v => 'next'));
+    // const check$ = fromEvent(actions[0], 'click').pipe(map(v => 'check'));
+    // const clean$ = fromEvent(actions[1], 'click').pipe(map(v => 'clean'));
+    const next$ = fromEvent(actions[0], 'click').pipe(map(v => 'next'));
 
     const screen = document.querySelector('.panel-validation');
     const scorePanel = document.querySelector('.panel-score>.score');
@@ -262,7 +262,7 @@ function initialize() {
     );
 
 
-    const actions$ = merge(check$, clean$, next$);
+    const actions$ = merge(next$);
 
     let input = "";
     let lastPos = null;
