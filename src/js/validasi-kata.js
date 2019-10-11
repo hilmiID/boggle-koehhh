@@ -10,10 +10,14 @@ function validasiKataBiasa(word, wordList, callback) {
     // number of game is never null, word may be null
     word = word.toLowerCase();
     let mapped = wordList.map(v => v.toLowerCase())
-    if (!word) callback(null, false);
+    if (word == null) callback(null, false);
     //if (game_number > wordList.length) callback(new Error(ERROR_GAME, null));
     let answers = mapped;
     let valid = answers.includes(word);
+    if(valid) {
+      let index = answers.indexOf(word);
+      if (index !== -1) wordList.splice(index, 1);
+    }
     callback(null, valid);
 }
 
@@ -28,6 +32,3 @@ function validasiKata(word) {
         })
     })
 }
-
-//export { validasiKata };
-exports.validasiKata = validasiKata;
