@@ -1,0 +1,10 @@
+[
+    {
+        "list_huruf": [["A", "G", "I", "C"], ["O", "D", "I", "P"], ["E", "R", "U", "L"], ["Q", "X", "N", "C"]],
+        "list_hasil": ["ADIPIC", "ADORE", "ADORN", "ADUNC", "CIDER", "CIRE", "CLIP", "CULICID", "CUPID", "CURD", "CURE", "CURED", "CURN", "DAGO", "DIRE", "DOER", "DORE", "DRIP", "DURE", "DURN", "DURO", "GADI", "GIRD", "GIRN", "GIRO", "GOAD", "GOER", "GORE", "GORED", "IRED", "LIDO", "LIPID", "LIPIDE", "LIRE", "LUDE", "LUDIC", "LUER", "LURED", "LURID", "LUXE", "NUCLIDE", "NUCLIDIC", "NUDE", "NUDER", "NURD", "ODIC", "PIRN", "PIROG", "PIROGI", "PUDIC", "PULI", "PULICIDE", "PURDA", "PURE", "PURI", "REDIP", "REDO", "REDUX", "RIDE", "RIGID", "ROAD", "Rode", "Rude", "Unclip", "Unrig", "Unrip", "Uredo", "Uric", "Xeric"]
+    },
+    {
+        "list_huruf":[["Q", "W", "T", "Y"], ["I", "O", "P", "A"], ["Y", "U", "F", "H"], ["K", "L", "C", "B"]],
+        "list_hasil":["Afoul", "Atop", "Atopy", "Chap", "Chapt", "Chat", "Chay", "Fluky", "Foul", "Iota", "Ofay", "Opah", "Ouch", "Ouph", "Paty", "Pfui", "Phat", "Pouch", "Pouf", "Qoph", "Tofu", "Topful", "Toph", "Touch", "Typo", "Woful", "Yuch"]
+    }
+]
