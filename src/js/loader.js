@@ -2,29 +2,26 @@ var myJson;
 var list_huruf;
 var list_hasil;
 var index_list = 0;
-const wrapper = document.querySelector('.angka');
+const wrapper = document.querySelector('.panel-word');
 
 var generateNumberButton = () => {
     let huruf = list_huruf[index_list];
-    wrapper.classList.add('angka');
 
     while (wrapper.firstChild) {
         wrapper.removeChild(wrapper.firstChild);
     }
 
     for(let x1 of huruf){
+        const baris = document.createElement('div');
+        baris.classList.add('word-baris');
         for(let x2 of x1){
-            const number = document.createElement('button');
-            number.textContent = x2;
-
-            number.onclick = () => {
-                clickNumber(number.textContent);
-            }
-
-            wrapper.appendChild(number);
+            const word = document.createElement('div');
+            word.classList.add('word');
+            word.textContent = x2;
+            baris.appendChild(word);
         }
+        wrapper.appendChild(baris);
     }
-    document.body.appendChild(wrapper);
 }
 
 var loadJSON = () => {
