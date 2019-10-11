@@ -11,10 +11,10 @@ var generateNumberButton = () => {
         wrapper.removeChild(wrapper.firstChild);
     }
 
-    for(let x1 of huruf){
+    for (let x1 of huruf) {
         const baris = document.createElement('div');
         baris.classList.add('word-baris');
-        for(let x2 of x1){
+        for (let x2 of x1) {
             const word = document.createElement('div');
             word.classList.add('word');
             word.textContent = x2;
@@ -22,6 +22,8 @@ var generateNumberButton = () => {
         }
         wrapper.appendChild(baris);
     }
+
+    initialize();
 }
 
 var loadJSON = () => {
@@ -29,7 +31,7 @@ var loadJSON = () => {
     xobj.overrideMimeType("application/json");
     xobj.open('GET', './assets/db.json', true);
     xobj.onreadystatechange = () => {
-        if(xobj.readyState == 4 && xobj.status == '200') {
+        if (xobj.readyState == 4 && xobj.status == '200') {
             myJson = JSON.parse(xobj.responseText);
             use1set();
         }
@@ -45,7 +47,7 @@ var use1set = () => {
 }
 
 var next = () => {
-    if(index_list < list_huruf.length-1){
+    if (index_list < list_huruf.length - 1) {
         index_list += 1;
     }
     generateNumberButton();
