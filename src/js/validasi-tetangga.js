@@ -30,6 +30,7 @@ function validasiTetangga(objRes) { //pake promise
     });
 }
 
+//export { validasiTetangga };
 exports.validasiTetangga = validasiTetangga;
 exports.ERROR_INITIAL_POS = ERROR_INITIAL_POS;
 exports.ERROR_NULL = ERROR_NULL;

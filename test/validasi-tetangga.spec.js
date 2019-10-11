@@ -33,13 +33,13 @@ describe('validasi tetangga', function () {
 
     });
 
-    context('input tidak valid', function() {
-      it('harusnya keluar error', function() {
-        valid = validasiTetangga(coord[2]);
-        expect(valid).to.be.rejectedWith(Error, ERROR_INITIAL_POS);
-        valid = validasiTetangga(coord[4]);
-        expect(valid).to.be.rejectedWith(Error, ERROR_NULL);
-      })
+    context('input tidak valid', function () {
+        it('harusnya keluar error', function () {
+            valid = validasiTetangga(coord[2]);
+            expect(valid).to.be.rejectedWith(Error, ERROR_INITIAL_POS);
+            valid = validasiTetangga(coord[4]);
+            expect(valid).to.be.rejectedWith(Error, ERROR_NULL);
+        })
     });
 
 
