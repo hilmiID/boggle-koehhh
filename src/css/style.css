@@ -65,7 +65,7 @@ body{
     width: 15%;
     height: 80px;
     background-color: rgb(159, 221, 180);
-    margin: 4px 0px;
+    margin: 4px 4px;
     text-align: center;
     font-size: 40px;
     padding-top: 10px;
@@ -126,6 +126,7 @@ body{
     box-shadow: 3px 3px 5px rgb(57, 99, 71);
     border-radius: 8px;
     border: 1px solid rgb(77, 134, 96);
+    opacity: 0.8;
 }
 
 .panel-list>ul{
